@@ -3,17 +3,17 @@
 
 <!DOCTYPE html>
 <html lang="en"> 
-
 <style>
 body{
-  background: rgb(244,249,236);
-  background: linear-gradient(90deg, rgba(244,249,236,1) 0%, rgba(237,220,234,1) 57%, rgba(204,220,237,1) 100%);} 
+background: rgb(244,249,236);
+background: linear-gradient(90deg, rgba(244,249,236,1) 0%, rgba(237,220,234,1) 57%, rgba(204,220,237,1) 100%);
+} 
 
 div.main-screen{
   display:grid;
   grid-template-columns:200px auto;
   grid-template-areas:"navbar main-doc"
-    grid-gap:20px;
+  grid-gap:20px;
   
 }
 nav#navbar{
@@ -59,13 +59,11 @@ code{
     background-color:#e6ccff;
     width:100%;
   }
-  
 }
 
 </style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-
-<body>
 
 <div class="main-screen">  
   
@@ -85,33 +83,28 @@ code{
       <header>Introduction</header>
       <p style="font-size:25px; font-weight:bold;">What is CSS?</p>
       <ul>
-        <li>        CSS stands for Cascading Style Sheets
-</li>
-        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-</li>
-        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once
-</li>
-        <li>External stylesheets are stored in CSS files
-</li>
-
+        <li>        CSS stands for Cascading Style Sheets</li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+        <li>External stylesheets are stored in CSS files</li>
       </ul>
       
       <p style="font-size:25px;font-weight:bold;">Why Use CSS?</p>
       <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
       <code>
         body {
-  background-color: lightblue;
-}
+        background-color: lightblue;
+       }
 
-h1 {
-  color: white;
-  text-align: center;
-}
+        h1 {
+        color: white;
+        text-align: center;
+        }
 
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
+       p {
+       font-family: verdana;
+       font-size: 20px;
+       }
       </code>
 <br><br>
       
@@ -134,32 +127,26 @@ Multiple CSS declarations are separated with semicolons, and declaration blocks 
        <p style="font-size:20px;">In this example all "p" elements will be center-aligned, with a red text color:</p>
        <code>
          p {
-  color: red;
-  text-align: center;
-}
+        color: red;
+        text-align: center;
+         }
        </code>
        
        <p style="font-size:20px;">Example Explained</p>
        <ul>
          <li>p is a selector in CSS (it points to the HTML element you want to style: p )</li>
-         <li>color is a property, and red is the property value
-</li>
-         <li>text-align is a property, and center is the property value
-</li>
+         <li>color is a property, and red is the property value</li>
+         <li>text-align is a property, and center is the property value</li>
          
-    </section>
-       
+		 </section>
+    
+    
     
     <!--Comments-->
       <section class="main-section" id="CSS_Comments" >
       <header>CSS Comments</header>
         <p style="font-size:20px; font-weight:bold"></p>
-        <p>Comments are used to explain the code, and may help when you edit the source code at a later date.
-
-Comments are ignored by browsers.
-
-A CSS comment is placed inside the style element, and starts with /* and ends with */  .</p>
-        
+        <p>Comments are used to explain the code, and may help when you edit the source code at a later date.Comments are ignored by browsers.A CSS comment is placed inside the style element, and starts with /* and ends with */  .</p>
         <p style="font-size:20px;">Example</p>
         <code>
           /* This is a single-line comment */
@@ -172,29 +159,22 @@ p {
      <section class="main-section" id="CSS_Selectors" >
       <header>CSS Selectors</header>
        
-       <p style="font-size:20px;">CSS selectors are used to "find" (or select) the HTML elements you want to style.
-
-We can divide CSS selectors into five categories:</p>
+       <p style="font-size:20px;">CSS selectors are used to "find" (or select) the HTML elements you want to style.We can divide CSS selectors into five categories:</p>
        
        <ul>
-         <li>         Simple selectors (select elements based on name, id, class)
-</li>
-         <li>Combinator selectors (select elements based on a specific relationship between them)
-</li>
-         <li>Pseudo-class selectors (select elements based on a certain state)
-</li>
-         <li>Pseudo-elements selectors (select and style a part of an element)
-</li>
-         <li>Attribute selectors (select elements based on an attribute or attribute value)
-</li>
+         <li>         Simple selectors (select elements based on name, id, class)</li>
+         <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+         <li>Pseudo-class selectors (select elements based on a certain state)</li>
+         <li>Pseudo-elements selectors (select and style a part of an element)</li>
+         <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
        </ul>
        
        <p style="font-size:20px;">Example Here, all <p> elements on the page will be center-aligned, with a red text color: </p>
        <code>
          p {
-  text-align: center;
-  color: red;
-}
+         text-align: center;
+        color: red;
+        }
        </code><br><br>
     </section>
        
@@ -206,22 +186,20 @@ We can divide CSS selectors into five categories:</p>
        <p style="font-size:20px;">There are three ways of inserting a style sheet:"</p>
        
                  <ul>
-                   <li>External CSS
-</li>
-                   <li>Internal CSS
-</li>
+                   <li>External CSS</li>
+                   <li>Internal CSS</li>
                    <li>Inline CSS</li>
 
                  </ul>
        <code>
          body {
-  background-color: lightblue;
-}
+         background-color: lightblue;
+        }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
-}
+         h1 {
+         color: navy;
+         margin-left: 20px;
+         }
        </code>
        <br>
     </section>
@@ -229,6 +207,5 @@ h1 {
   </main>
 </div>
 
-</body>
 
 </html>
